@@ -1,0 +1,36 @@
+.products {
+    
+    
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+    }
+    &__text {
+        max-width: 440px;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 150%;
+        p {
+            margin-bottom: 40px;
+        }
+    }
+    &__slider-box {
+         position: relative;
+         padding-top: 110px;
+    }
+
+    &__slider {
+        max-width: 560px;
+    }
+    &__slider-text {
+        position: absolute;
+        max-width: 285px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: right;
+        bottom: 30px;
+        left: -250px;
+    }
+}

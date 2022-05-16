@@ -4,10 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Mavic</title>
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <picture class="logo__png">
+                        <source srcset="img/logo-mobile.png" media="(max-width: 600px)">
+                        <img src="img/logo.png" alt="logo">
+                    </picture>
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link">О ДРОНЕ</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link">ПРЕИМУЩЕСТВА</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link">ХАРАКТЕРИСТИКИ</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link">ВОПРОСЫ</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="" class="menu__list-link">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__info">
+                    <button class="header__btn">купить</button>
+                    <a class="header__phone" href="tel:80505676767">8 (050) 567 67 67</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-section top">
+        <div class="wrapper">
+            <div class="container">
+                <div class="top__inner">
+                    <h1 class="top__title">
+                        Mavic 2 Pro
+                    </h1>
+                    <img src="img/mavic.png" alt="mavic">
+                    <p class="top__text">
+                        Квадрокоптер Dji Mavic 2 Pro 
+                        с профессиональной камерой Hasselblad
+                    </p>
+                    <ul class="top__social-list">
+                        <li class="top__social-item">
+                            <a class="top__social-link" href="">
+                                <img src="img/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="top__social-item">
+                            <a class="top__social-link" href="">
+                                <img src="img/youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                        <li class="top__social-item">
+                            <a class="top__social-link" href="">
+                                <img src="img/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
     
     
+    
+               
+            </div>
+
+            <div class="scroll__btn">
+                <a href="#products">
+                    <img src="img/arrow-down.svg" alt="arrow">
+                </a>
+            </div> 
+        </div>
+        
+    </section>
+
+    <section id="products" class="page-section products">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="title products__title">Что такое Mavix 2 Pro</h2>
+                <div class="products__inner">
+                    <div class="products__text">
+                        <p>Дрон Mavic 2 Pro - это инженерное чудо, идеальное для аэросъемки. 
+                            Дрон обладает всеми лучшими технологиями DJI, он преобразит мир аэросъемки.
+                        </p>
+                        <p>
+                            Mavic 2 Pro оснащен совершенно новой камерой Hasselblad L1D-20c. 
+                            Камера L1D-20c работает по уникальной технологии Hasselblad Natural Colour Solution (HNCS)5, 
+                            позволяющей пользователям делать великолепные снимки с воздуха с разрешением в 20 мегапикселей и потрясающими цветами.
+                        </p>
+                    </div>
+                    <div class="products__slider-box">
+                        <p class="products__slider-text">
+                            Лучшая беспилотная
+                                технология аэросъемки
+                        </p>
+                        <div class="products__slider">
+                            <div class="products__slider-item">
+                                <img class="products__slider-img" src="img/slide-1.jpg" alt="mavic">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+            <div class="scroll__btn">
+                <a href="#">
+                    <img src="img/arrow-down.svg" alt="arrow">
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

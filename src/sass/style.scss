@@ -1,0 +1,21 @@
+@import 'base/global';
+@import 'base/fonts';
+
+
+
+
+* {
+    font-family: 'Ubuntu', 'SF Pro Display', sans-serif;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1240px;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/top';
+@import 'blocks/products';
