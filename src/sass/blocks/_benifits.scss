@@ -1,0 +1,109 @@
+.benifits {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+   
+    &__title {
+        padding-left: 28px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 55px;
+        margin-top: 53px;
+    }
+    &__item {
+        margin-bottom: 100px;
+        display: flex;
+        align-items: flex-end;
+        &:nth-child(even) {
+            margin-left: 40px;
+            transform: translateY(15px);
+        }
+        &:nth-child(3) {
+            margin-left: 30px;
+        }
+        &:first-child,
+        &:nth-child(3) {
+            position: relative;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+            }
+        }
+        &:first-child {
+            &:before {
+                background: url(../../img/line-1.svg);
+                width: 245px;
+                height: 55px;
+                top: 30px;
+                right: -50px;
+            }
+        }
+        &:nth-child(3) {
+            &:before {
+                background: url(../../img/line-3.svg);
+                width: 255px;
+                height: 40px;
+                top: 50px;
+                right: -55px;
+            }
+            &:after {
+                background: url(../../img/line-2.svg);
+                width: 464px;
+                height: 63px;
+                top: -70px;
+                right: -20px ;
+            }
+        }
+        
+    }
+    
+
+    &__num {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 41px;
+        margin-right: 8px;
+    }
+    &__img {
+        position: relative;
+        max-width: 195px;
+        margin-right: 32px;
+        img {
+            position: relative;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 193px;
+            height: 128px;
+            border: 2px solid #fff;
+            top: -12px;
+            right: -12px;
+            z-index: 0;
+            
+        }
+    }
+    &__info {
+        max-width: 300px;
+        
+    }
+    &__info-title {
+        width: 123px;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    &__info-text {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px
+    }
+
+}

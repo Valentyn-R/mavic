@@ -1,0 +1,74 @@
+.spicification {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 77px;
+    
+    }
+    &__title {
+        
+    }
+    &__item {
+       
+    }
+    &__box {
+        width: 280px;
+        position: relative;
+        margin-top: 10px;
+        &:before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+    }
+    &__box-2 {
+        margin-top: 150px;
+    }
+    &__box-4 {
+        margin-top: 160px;
+    }
+
+    &__box-1:before {
+        background: url('../../img/pointer-1.svg');
+        width: 229px;
+        height: 115px;
+        top: 15px;
+        right: -140px;
+    }
+    &__box-2:before {
+        background: url('../../img/pointer-2.svg');
+        width: 346px;
+        height: 81px;
+        top: -61px;
+        right: -325px;
+    }
+    &__box-3:before {
+        background: url('../../img/pointer-3.svg');
+        width: 258px;
+        height: 104px;
+        top: 15px;
+        left: -290px;
+    }
+    &__box-4:before {
+        background: url('../../img/pointer-4.svg');
+        width: 124px;
+        height: 89px;
+        top: -57px;
+        left: -152px;
+    }
+
+    &__box-title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 28px;
+    }
+    &__box-text {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+}

@@ -1,4 +1,7 @@
-
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
@@ -12,27 +15,49 @@ li {
     padding: 0;
 }
 h1,
-h2 {
+h2,
+h3 {
     margin: 0;
     font-size: inherit;
 }
 
 body {
-    //position: relative;
     color: #fff;
     min-width: 320px;
+}
+
+button {
+    padding: 0;
 }
 
 .page-section {
     position: relative;
     height: 100vh;
     background: url(../../img/products_bg.jpg)center center/cover no-repeat;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+        opacity: 0.15;
+        z-index: 0;
+    }
+
+   
+    
 }
 .wrapper {
     padding: 74px 0 50px 0;
-    z-index: 1;
+    position: relative;
     
-
+}
+.title {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 53px;
 }
 
 .scroll__btn {
@@ -42,6 +67,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 10;
+    cursor: pointer;
     
 }
 
