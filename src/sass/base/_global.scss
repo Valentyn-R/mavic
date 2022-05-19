@@ -16,7 +16,8 @@ li {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0;
     font-size: inherit;
 }
@@ -32,7 +33,7 @@ button {
 
 .page-section {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background: url(../../img/products_bg.jpg)center center/cover no-repeat;
     &:before {
         content: '';

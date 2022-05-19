@@ -6,4 +6,11 @@ $(document).ready(function(){
         infinite: false,
     });
 
+    $('.question__item-title').on('click', function(){
+
+        $('.question__item').removeClass('question__item-active');
+        $(this).parent().addClass('question__item-active');
+        
+    });
+
   });
